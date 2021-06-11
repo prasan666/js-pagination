@@ -1,0 +1,39 @@
+{
+  "name": "js-pagination",
+  "version": "1.0.0",
+  "description": "pagination in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasan666/js-pagination.git"
+  },
+  "keywords": [
+    "pagination",
+    "javascript"
+  ],
+  "author": "PK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasan666/js-pagination/issues"
+  },
+  "homepage": "https://github.com/prasan666/js-pagination#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "file-loader": "^6.2.0",
+    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "url-loader": "^4.1.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}

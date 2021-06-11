@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox" onclick="toggle(event)" /></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+        <div id="pagination-buttons" class="text-center buttons-fixed d-flex">
+            <button class="btn btn-primary mr-2" type="button" id="first" onclick="firstPage()" value="first">
+                First
+            </button>
+            <button class="btn btn-primary  mr-2" type="button" id="previous" onclick="previousPage()" value="previous">
+                < </button>
+                    <div id="page-number-buttons" class="d-flex mx-2"></div>
+                    <button class="btn btn-primary  mr-2" type="button" id="next" onclick="nextPage()" value="next">
+                        >
+                    </button>
+
+                    <button class="btn btn-primary  mr-2" type="button" id="last" onclick="lastPage()" value="last">
+                        Last
+                    </button>
+        </div>
+        <div class="buttons-fixed" style="margin-left :3px;">
+            <button style="border-radius:20px" class="btn btn-danger" type="button" id="last"
+                onclick="deleteSelectedusers()">
+                Delete Selected users
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Delete Account</h1>
+                <p>Are you sure you want to delete your account?</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="button" class="deletebtn">Delete</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+    <div id="id01" class="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Edit user</h5>
+              <button type="button" class="close" onclick="document.getElementById('id01').style.display='none'">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="save()">Save changes</button>
+              <button type="button" class="btn btn-secondary" onclick="document.getElementById('id01').style.display='none'">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+<script defer src="runtime.025cf9158e26ffe78fc7.js"></script><script defer src="vendors.b8bce967ea4329ec538c.js"></script><script defer src="index.05670c095476fa9a0bc5.js"></script></body>
+
+</html>
